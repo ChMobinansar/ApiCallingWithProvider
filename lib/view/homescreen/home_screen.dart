@@ -30,8 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         title:
                             Text(userInfo.userList![index].userName.toString()),
                         leading: Text(userInfo.userList![index].id.toString()),
-                        trailing: Text(userInfo.userList![index].addres!.street
-                            .toString()),
+                        trailing:
+                            Text(userInfo.userList![index].name.toString()),
                       );
                     });
               } else {

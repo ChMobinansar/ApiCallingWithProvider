@@ -7,8 +7,7 @@ class UserController extends ChangeNotifier {
   List<UserDataModel>? userList = [];
   Future<List<UserDataModel>?> getAllUser() async {
     userList = (await Services.getApiData());
-    print('This is list in fucking provider ${userList?.length}');
-
+    print('This is list in  provider ${userList?.length}');
     notifyListeners();
     return userList;
   }

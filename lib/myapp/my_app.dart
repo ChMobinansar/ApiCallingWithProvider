@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        //TODO if you have one provider add single provider like this
         home: ChangeNotifierProvider(
             create: (context) => UserController(), child: HomeScreen()));
   }
